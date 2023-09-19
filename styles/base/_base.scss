@@ -1,0 +1,105 @@
+:root {
+  --color-negro: #000000;
+  --color-blanco: #ffffff;
+  --color-azul: #458ff6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  color: var(--color-negro);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+h2 {
+  color: var(--color-negro);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+h3 {
+  color: var(--color-negro);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+h4 {
+  color: var(--color-negro);
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+h5 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #7d7987;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 0 0 10px;
+}
+
+.container {
+  margin: 0 15px;
+  max-width: 100%;
+
+  @include breakpoint(768px) {
+    max-width: 745px;
+    margin: 0 auto;
+  }
+
+  @include breakpoint(1024px) {
+    max-width: 920px;
+  }
+
+  @include breakpoint(1280px) {
+    max-width: 1170px;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.image-content .btn {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Breakpoints
+  $phone = 375px
+  $tablet = 768px
+  $laptop = 1024px
+  $desktop = 1280px */
+
+//Responsive design media querie
+// @media (min-width: 1024px) {
+//   selector {
+//     propiedad: valor;
+//   }
+// }

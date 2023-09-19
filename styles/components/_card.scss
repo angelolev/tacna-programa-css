@@ -1,0 +1,27 @@
+.card {
+  border-radius: 20px;
+  background: #e7e3e3;
+  box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
+  padding: 54px 45px 47px 39px;
+  text-align: center;
+
+  img {
+    display: block;
+    margin: 0 auto 10px;
+  }
+
+  &-container {
+    display: grid;
+    grid-gap: 34px;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+
+    @include breakpoint(768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint(1024px) {
+      grid-template-columns: repeat(3, minmax(350px, 1fr));
+    }
+  }
+}

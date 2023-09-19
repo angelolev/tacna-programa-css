@@ -1,0 +1,16 @@
+nav {
+  display: none;
+
+  @include breakpoint(1024px) {
+    display: block;
+  }
+
+  & ul li {
+    color: #1f1534;
+    font-size: 18px;
+
+    & a:hover {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+header {
+  & .container {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+
+    @include breakpoint(1024px) {
+      justify-content: space-between;
+    }
+  }
+
+  & nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+  }
+}

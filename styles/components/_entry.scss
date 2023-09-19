@@ -1,0 +1,34 @@
+.entry {
+  border-radius: 20px;
+  background: var(--color-blanco);
+  box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
+  padding: 33px 35px;
+  text-align: left;
+
+  & h4 {
+    margin-top: 20px;
+    margin-bottom: 12px;
+  }
+
+  & p {
+    margin-bottom: 25px;
+  }
+
+  & a {
+    color: var(--color-azul);
+  }
+
+  &-list {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+
+    @include breakpoint(768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint(1024px) {
+      grid-template-columns: repeat(3, minmax(350px, 1fr));
+    }
+  }
+}
